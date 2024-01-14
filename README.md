@@ -1,4 +1,13 @@
 Welcome
+<script> 
+if (typeof window._phv2Activator === "undefined") {
+document.addEventListener('phv2site.ready', (e) => {
+window._phv2Activator.activate('native_web_push');
+});
+} else {
+window._phv2Activator.activate('native_web_push');
+}
+</script>
 <script type="text/javascript">
     const time_wait= 1;
     const blackout=6;
